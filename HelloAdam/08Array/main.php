@@ -8,17 +8,12 @@
     <title>Labkom FMIPA UNS</title>
 </head>
 <body>
+    <h1>Array</h1>
     <?php
-    $angka = 123.5;
-    echo round($angka);
-    try {
-        echo 'Angka hari ini adalah ' . random_int(0, 10);
-
-    } catch (Exception $e) {
-        echo 'ini adalah exceptions'.$e;
-    }
-    echo 'Angka maksimal hari ini adalah ' . max(0, 1, 2, 3, 4, 5);
-    echo 'Angka minimal hari ini adalah ' . min(0, 1, 2, 3, 4, 5);
+    $hewan = array('kucing', 'anjing', 'kelinci', 'sapi', 'ular');
+    $buah = ['apel','jeruk','mangga','stroberi','anggur'];
+    print_r($hewan);
+    echo $buah[0].$buah[1].$buah[2].$buah[3].$buah[4];
     ?>
 </body>
 </html>

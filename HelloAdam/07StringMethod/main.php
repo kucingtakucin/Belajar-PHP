@@ -9,16 +9,12 @@
 </head>
 <body>
     <?php
-    $angka = 123.5;
-    echo round($angka);
-    try {
-        echo 'Angka hari ini adalah ' . random_int(0, 10);
-
-    } catch (Exception $e) {
-        echo 'ini adalah exceptions'.$e;
-    }
-    echo 'Angka maksimal hari ini adalah ' . max(0, 1, 2, 3, 4, 5);
-    echo 'Angka minimal hari ini adalah ' . min(0, 1, 2, 3, 4, 5);
+    $kalimat = 'Halo nama saya adam, biasa dipanggil arthur';
+    echo $kalimat;
+    echo strlen($kalimat);
+    echo str_word_count($kalimat);
+    echo str_replace('Halo', 'Hai', $kalimat);
+    echo str_shuffle($kalimat);
     ?>
 </body>
 </html>
