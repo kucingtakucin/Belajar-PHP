@@ -8,10 +8,3 @@
     <title>Labkom FMIPA UNS</title>
 </head>
 <body>
-    <?php
-//    phpinfo()
-    ?>
-    <? echo 'halo'; ?>
-    <?='halo' ?>
-</body>
-</html>

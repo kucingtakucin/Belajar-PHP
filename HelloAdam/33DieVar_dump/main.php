@@ -9,9 +9,9 @@
 </head>
 <body>
     <?php
-//    phpinfo()
+      $halo_dunia = 'Hello, World!';
+      var_dump($halo_dunia);
+      die();
     ?>
-    <? echo 'halo'; ?>
-    <?='halo' ?>
 </body>
 </html>
