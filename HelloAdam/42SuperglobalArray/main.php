@@ -8,3 +8,12 @@
     <title>Labkom FMIPA UNS</title>
 </head>
 <body>
+    <main>
+    <h1>Labkom FMIPA UNS</h1>
+    <h1>Superglobal Array</h1>
+    </main>
+    <?php
+    print_r($_SERVER);
+    ?>
+</body>
+</html>
