@@ -5,7 +5,7 @@ if (!$link) {
 }
 $query = 'create database helloadam';
 if (mysqli_query($link, $query)) {
-    echo 'Database berhasil dihapus!';
+    echo 'Database berhasil dibuat!';
 } else {
     echo 'Gagal!';
 }
