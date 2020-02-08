@@ -1,0 +1,61 @@
+*{
+  margin: 0; padding: 0;
+  font-family: sans-serif;
+}
+
+body{
+  margin: 40px auto;
+  width: 80%;
+}
+
+h1{
+  margin-bottom: 30px;
+}
+
+.each_article{
+  background-color: rgb(160, 171, 170);
+  color:white;
+  padding: 5px;
+  margin: 5px;
+}
+
+.each_article a{
+  color:white;
+}
+
+.each_article h3 a{
+  color:#333231;
+}
+
+.waktu, .tag{
+  font-size: 11px;
+}
+
+#menu{
+  margin: 10px 0;
+}
+
+#menu a{
+  color:black;
+}
+
+#error{
+  color: red;
+}
+
+#judul_single{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#isi_single{
+  margin: 10px 0 15px 0;
+}
+
+#tag_single{
+  font-size: 12px;
+}
+
+#footer{
+  margin-top: 30px;
+}

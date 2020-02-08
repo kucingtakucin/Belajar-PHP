@@ -33,7 +33,7 @@
 
       //----- return fungsi -----
 
-      // function menghitung($x, $y){
+      // functions menghitung($x, $y){
       //   $z = $x + $y;
       //   return $z;
       // }
@@ -56,16 +56,16 @@
 
       //echo menghitung();
 
-      //--- anonymous function ---
+      //--- anonymous functions ---
 
-      // $ngetik = function($text){
+      // $ngetik = functions($text){
       //   echo $text;
       // };
 
       // $greeting = $ngetik;
       // $greeting( 'selamat datang semuanya 123 ');
 
-      //--- callback function ---
+      //--- callback functions ---
 
       function berteriak($callback){
         echo 'HALOOOOOO <br>';
@@ -81,7 +81,7 @@
 
 
 
-      // berteriak(function(){
+      // berteriak(functions(){
       //   echo ' saya anonymous, alias ngga punya nam';
       // });
 
