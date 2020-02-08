@@ -6,9 +6,7 @@ function register_user($user, $pass){
 
     $pass = password_hash($pass, CRYPT_BLOWFISH);
     $query = "insert into users (username, password) values ('$user', '$pass')";
-    if (mysqli_query($link, $query)) {
-        return true;
-    }
+    if (mysqli_query($link, $query)) return true;
     return false;
 }
 
@@ -16,9 +14,7 @@ function cek_nama($user){
     global $link;
     $user = escape($user);
     $query = "select * from users where username = '$user'";
-    if ($hasil = mysqli_query($link, $query)) {
-        return mysqli_num_rows($hasil);
-    }
+    if ($hasil = mysqli_query($link, $query)) return mysqli_num_rows($hasil);
 }
 
 function cek_data($user, $pass){
@@ -28,11 +24,18 @@ function cek_data($user, $pass){
     $hasil = mysqli_query($link, $query);
     $hash = mysqli_fetch_assoc($hasil)['password'];
 
-    if (password_verify($pass, $hash)) {
-        return true;
-    } else {
-        return false;
-    }
+    if (password_verify($pass, $hash)) return true;
+    else return false;
+}
+
+function cek_status($user){
+    global $link;
+    $user = escape($user);
+    $query = "select role from users where username = '$user'";
+    $hasil = mysqli_query($link, $query);
+    $status = mysqli_fetch_assoc($hasil)['role'];
+    if ($status == 1) return true;
+    else return false;
 }
 
 function escape($data){

@@ -12,18 +12,18 @@ if (isset($_POST['submit'])) {
             if (cek_data($user, $pass)) {
                 $_SESSION['user'] = $user;
                 header('Location:index.php');
-            } else {
-                $error = "Username atau password salah!";
-            }
-        } else {
-            $error = "Username tidak ada!";
-        }
-    } else {
-        $error = "Tidak boleh kosong!";
-    }
+            } else $error = "Username atau password salah!";
+        } else $error = "Username tidak ada!";
+    } else $error = "Tidak boleh kosong!";
+
 }
 require_once 'view/header.php';
+if (isset($_SESSION['message'])) {
+    echo $_SESSION['message'].'<br>';
+    unset($_SESSION['message']);
+}
 ?>
+    <br>
     <main>
         <form action="login.php" method="post">
             <label for="username">Username</label>
