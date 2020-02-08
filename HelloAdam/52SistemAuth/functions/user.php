@@ -1,8 +1,8 @@
 <?php
 function register_user($user, $pass){
     global $link;
-    $user = mysqli_real_escape_string($link, $user);
-    $pass = mysqli_real_escape_string($link, $pass);
+    $user = escape($user);
+    $pass = escape($pass);
 
     $pass = password_hash($pass, CRYPT_BLOWFISH);
     $query = "insert into users (username, password) values ('$user', '$pass')";
@@ -12,42 +12,30 @@ function register_user($user, $pass){
     return false;
 }
 
-function register_cek_nama($user){
+function cek_nama($user){
     global $link;
-    $user = mysqli_real_escape_string($link, $user);
-    $query = "select * from users where username='$user'";
-    if ($hasil = mysqli_query($link, $query)) {
-        if (mysqli_num_rows($hasil) == 0) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
-
-
-function login_cek_nama($user){
-    global $link;
-    $user = mysqli_real_escape_string($link, $user);
+    $user = escape($user);
     $query = "select * from users where username = '$user'";
     if ($hasil = mysqli_query($link, $query)) {
-        if (mysqli_num_rows($hasil) != 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return mysqli_num_rows($hasil);
     }
 }
 
 function cek_data($user, $pass){
     global $link;
-    $user = mysqli_real_escape_string($link, $user);
+    $user = escape($user);
     $query = "select password from users where username = '$user'";
     $hasil = mysqli_query($link, $query);
     $hash = mysqli_fetch_assoc($hasil)['password'];
+
     if (password_verify($pass, $hash)) {
         return true;
     } else {
         return false;
     }
+}
+
+function escape($data){
+    global $link;
+    return mysqli_real_escape_string($link, $data);
 }

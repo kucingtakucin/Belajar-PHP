@@ -13,7 +13,11 @@
     <h1 id="judul">Login & Register</h1>
     <nav>
         <a href="#">Home</a>
+        <?php if (!isset($_SESSION['user'])){ ?>
         <a href="register.php">Register</a>
         <a href="login.php">Login</a>
+        <?php } else { ?>
+        <a href="logout.php">Logout</a>
+        <?php } ?>
     </nav>
 </header>
