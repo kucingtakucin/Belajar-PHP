@@ -12,7 +12,6 @@ class Mahasiswa{
     public function setAngkatan($angkatan): void{
         $this->angkatan = $angkatan;
     }
-
     public function setJurusan($jurusan): void{
         $this->jurusan = $jurusan;
     }
