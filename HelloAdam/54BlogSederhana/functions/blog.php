@@ -2,15 +2,17 @@
 function read_data(){
     global $link;
     $query = 'select * from blog';
-    $hasil = mysqli_query($link, $query) or die(mysqli_error($link));
-    return $hasil;
+//    $hasil = mysqli_query($link, $query) or die(mysqli_error($link));
+    if ($data = mysqli_query($link, $query)) return $data;
+     else return mysqli_error($link);
 }
 
 function view_data_per_id($id){
     global $link;
     $query = "select * from blog where id = '$id'";
-    $hasil = mysqli_query($link, $query) or die(mysqli_error($link));
-    return $hasil;
+//    $hasil = mysqli_query($link, $query) or die(mysqli_error($link));
+    if ($data = mysqli_query($link, $query)) return $data;
+    else return mysqli_error($link);
 }
 
 function add_data($judul, $isi, $tag){
@@ -34,26 +36,29 @@ function delete_data($id){
     return run_query($query);
 }
 
-function search_data($data){
+function search_data($judul){
     global $link, $start, $per_halaman;
-    $data = escape($data);
-    $query = "select * from blog where judul like '%$data%' limit $start,$per_halaman";
-    $hasil = mysqli_query($link, $query) or die(mysqli_error($link));
-    return $hasil;
+    $judul = escape($judul);
+    $query = "select * from blog where judul like '%$judul%' limit $start,$per_halaman";
+//    $hasil = mysqli_query($link, $query) or die(mysqli_error($link));
+    if ($data = mysqli_query($link, $query)) return $data;
+    else return mysqli_error($link);
 }
 
 function cek_status($user){
     global $link;
     $query = "select role from users where username = '$user'";
-    $data = mysqli_query($link, $query);
-    if (mysqli_fetch_assoc($data)['role'] == 1) return true;
-    else return false;
-
+    if ($data = mysqli_query($link, $query)) {
+        if ($status = mysqli_fetch_assoc($data)) {
+            if ($status['role'] == 1) return true;
+            else return false;
+        } else return false;
+    } else return false;
 }
 
 function run_query($query){
     global $link;
-    if (mysqli_query($link, $query)) return true;
+    if ($data = mysqli_query($link, $query)) return true;
     else return false;
 }
 
