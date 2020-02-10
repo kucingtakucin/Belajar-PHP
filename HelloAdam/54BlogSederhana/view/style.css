@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/clement-h-95YRwf6CNw8-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  border: 25px solid gray;
+  border-radius: 25px;
+  margin: 100px auto;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+.container header {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  font-size: 25px;
+}
+.container header section#navigasi {
+  padding-top: 20px;
+  text-align: left;
+}
+.container header section#navigasi nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+.container header section#navigasi nav ul li a {
+  text-decoration: none;
+  color: darkblue;
+}
+.container header section#navigasi .user {
+  margin-bottom: 15px;
+}
+.container section#search {
+  padding: 15px;
+}
+.container main {
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(169, 169, 169, 0.9);
+  border-radius: 10px;
+}
+.container main section#judul {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.container main section#judul h3 a {
+  text-decoration: none;
+  color: darkblue;
+}
+.container main section#isi {
+  margin-bottom: 10px;
+}
+.container main button {
+  margin-top: 10px;
+}
+.container main button a {
+  text-decoration: none;
+}
+.container main .error {
+  color: red;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+.container .pagination {
+  text-align: center;
+}
+.container .pagination a {
+  text-decoration: none;
+  color: darkblue;
+}
+.container footer {
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
