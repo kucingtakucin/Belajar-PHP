@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  font-family: sans-serif;
+  margin: 50px auto;
+  background-color: #aaaaaa;
+}
+.container header {
+  padding: 15px;
+  border-bottom: 5px solid gray;
+}
+.container header nav ul li {
+  display: inline;
+}
+.container main {
+  padding: 15px;
+}
+.container footer {
+  padding: 15px;
+  border-top: 5px solid gray;
+}
+
+/*# sourceMappingURL=style.css.map */
