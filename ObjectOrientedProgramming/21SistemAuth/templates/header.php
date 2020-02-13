@@ -20,9 +20,16 @@
             <nav>
                 <ul>
                     <li><a href="profile.php">Profile</a></li>
-                    <li><a href="register.php">Register</a></li>
-                    <li><a href="login.php">Login</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <?php if (Session::isExist('User')): ?>
+                        <?php if ($user->is_admin(Session::get('User'))): ?>
+                        <li><a href="admin.php">Admin</a></li>
+                        <?php endif; ?>
+                        <li><a href="change-password.php">Ganti Password</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    <?php else: ?>
+                        <li><a href="login.php">Login</a></li>
+                        <li><a href="register.php">Register</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
         </header>

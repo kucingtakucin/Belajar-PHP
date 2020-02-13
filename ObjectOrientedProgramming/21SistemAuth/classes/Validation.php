@@ -16,6 +16,9 @@ class Validation{
                     case 'max':
                         if (strlen(Input::post($item)) > $value): $this->addError($item . ' maksimal ' . $value . ' karakter!'); endif;
                         break;
+                    case 'match':
+                        if (Input::post($item) != Input::post($value)): $this->addError('Password tidak sama!'); endif;
+                        break;
                     default:
                         break;
                 endswitch;

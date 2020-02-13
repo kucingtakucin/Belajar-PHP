@@ -54,6 +54,12 @@
 .container main section#errors ul li {
   color: red;
 }
+.container main section#profile h1 {
+  font-size: 30px;
+}
+.container main section#profile div h2 {
+  font-size: 20px;
+}
 .container footer {
   padding: 15px;
   border-top: 5px solid gray;
