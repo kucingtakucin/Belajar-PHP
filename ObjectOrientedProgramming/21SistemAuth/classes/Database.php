@@ -39,10 +39,10 @@ class Database{
             $query = "select * from $table where $column = $values";
             if ($result = $this->mysqli->query($query)):
                 if ($result->num_rows > 1):
-                    if ($data = $result->fetch_object()): return $data; endif;
-                else:
                     while ($data = $result->fetch_object()): $hasil[] = $data; endwhile;
                     return $hasil;
+                else:
+                    if ($data = $result->fetch_object()): return $data; endif;
                 endif;
             else: return false; endif;
         else:
