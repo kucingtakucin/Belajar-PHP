@@ -18,7 +18,6 @@ if (isset($_SESSION['message'])) {
     unset($_SESSION['message']);
 }
 ?>
-
     <main>
         <form action="register.php" method="post">
             <label for="username">Username</label>
@@ -31,9 +30,7 @@ if (isset($_SESSION['message'])) {
             <br><br>
             <?php if ($error !== null) { ?>
             <div id="error">
-                <?php
-                echo $error;
-                ?>
+                <?php echo $error; ?>
             </div>
             <?php } ?>
         </form>
