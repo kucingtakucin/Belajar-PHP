@@ -8,7 +8,7 @@
     <title>Latihan 1</title>
 </head>
 <body>
-<h1>Hello, World!</h1>
+<h1><?= 'Latihan 1'?></h1>
 <?php
 $nama_depan = 'Adam';
 $nama_tengah = 'Arthur';
@@ -19,7 +19,7 @@ echo "Halo, perkenalkan nama saya $nama_depan $nama_tengah $nama_belakang";
     <?php for ($i = 1; $i <= 3; $i++) :?>
         <tr>
             <?php for ($j = 1; $j <= 5; $j++) :?>
-                <td><?php echo "$i, $j"?></td>
+                <td><?= "$i, $j"?></td>
             <?php endfor ?>
         </tr>
     <?php endfor ?>
