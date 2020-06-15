@@ -1,1 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
+*.css
+*.js
+Mandiri/15miniFrameworkBasic/public/assets/
+Mandiri/15miniFrameworkBasic/public/js/
+Mandiri/16MiniFrameworkEloquent/public/assets/
+Mandiri/16MiniFrameworkEloquent/public/js/
+Mandiri/17MainMain/
