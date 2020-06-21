@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3ebe2b0-f3a3-4819-a5c9-b8ab028e9a7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/htdocs/Constructor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/httpd-app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/httpd-app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/httpd-prefix.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/httpd-prefix.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/httpd-vhosts.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/httpd-vhosts.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htdocs/Produk.php" beforeDir="false" afterPath="$PROJECT_DIR$/htdocs/Produk.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1daPybO5yj9O9KVewbbgIyCJ2Ax" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3ebe2b0-f3a3-4819-a5c9-b8ab028e9a7c" name="Default Changelist" comment="" />
+      <created>1592660485742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592660485742</updated>
+      <workItem from="1592660490925" duration="3538000" />
+      <workItem from="1592706094739" duration="1435000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="422" y="101" width="511" height="600" key="NewPhpClassDialog" timestamp="1592660621094">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="422" y="101" width="511" height="600" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1592660621094" />
+    <state x="478" y="319" width="399" height="164" key="NewPhpFileDialog" timestamp="1592706695565">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="478" y="319" width="399" height="164" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1592706695565" />
+    <state x="422" y="189" width="512" height="423" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1592660708582">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="422" y="189" width="512" height="423" key="com.jetbrains.php.test.PhpNewTestDialog/0.27.1366.741@0.27.1366.741" timestamp="1592660708582" />
+  </component>
+</project>
